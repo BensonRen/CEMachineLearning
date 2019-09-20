@@ -1,0 +1,711 @@
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Train on CPU...
+[Errno 2] No such file or directory: './saved_model/model.h5'
+Checkpoint not found.
+Training from scratch ...
+Starting from learning rate 0.010000:
+2019-09-15 20:53:56.998392
+Epoch 0:
+176
+Training loss: 2.2537, Training accuracy: 0.2183
+2019-09-15 20:54:01.077424
+Validation...
+Validation loss: 1.8351, Validation accuracy: 0.3364
+2019-09-15 20:54:01.631733
+Epoch 1:
+176
+Training loss: 1.6585, Training accuracy: 0.4082
+2019-09-15 20:54:05.481465
+Validation...
+Validation loss: 1.5488, Validation accuracy: 0.4242
+2019-09-15 20:54:06.040583
+Epoch 2:
+176
+Training loss: 1.4425, Training accuracy: 0.4779
+2019-09-15 20:54:09.855182
+Validation...
+Validation loss: 1.4291, Validation accuracy: 0.4764
+2019-09-15 20:54:10.424149
+Epoch 3:
+176
+Training loss: 1.3281, Training accuracy: 0.5214
+2019-09-15 20:54:14.268924
+Validation...
+Validation loss: 1.3044, Validation accuracy: 0.5288
+2019-09-15 20:54:14.848026
+Epoch 4:
+176
+Training loss: 1.2408, Training accuracy: 0.5571
+2019-09-15 20:54:18.682870
+Validation...
+Validation loss: 1.2325, Validation accuracy: 0.5534
+2019-09-15 20:54:19.248204
+Epoch 5:
+176
+Training loss: 1.1637, Training accuracy: 0.5880
+2019-09-15 20:54:23.162017
+Validation...
+Validation loss: 1.2663, Validation accuracy: 0.5572
+2019-09-15 20:54:23.732141
+Epoch 6:
+176
+Training loss: 1.1030, Training accuracy: 0.6085
+2019-09-15 20:54:27.609659
+Validation...
+Validation loss: 1.1700, Validation accuracy: 0.5906
+2019-09-15 20:54:28.167634
+Epoch 7:
+176
+Training loss: 1.0610, Training accuracy: 0.6232
+2019-09-15 20:54:31.979609
+Validation...
+Validation loss: 1.1159, Validation accuracy: 0.6142
+2019-09-15 20:54:32.538816
+Epoch 8:
+176
+Training loss: 0.9973, Training accuracy: 0.6450
+2019-09-15 20:54:36.357596
+Validation...
+Validation loss: 1.0860, Validation accuracy: 0.6156
+2019-09-15 20:54:36.915603
+Epoch 9:
+176
+Training loss: 0.9634, Training accuracy: 0.6574
+2019-09-15 20:54:40.713139
+Validation...
+Validation loss: 1.0939, Validation accuracy: 0.6166
+2019-09-15 20:54:41.277288
+Epoch 10:
+176
+Training loss: 0.9305, Training accuracy: 0.6718
+2019-09-15 20:54:45.091692
+Validation...
+Validation loss: 1.0593, Validation accuracy: 0.6310
+2019-09-15 20:54:45.640373
+Epoch 11:
+176
+Training loss: 0.8936, Training accuracy: 0.6857
+2019-09-15 20:54:49.475550
+Validation...
+Validation loss: 1.0230, Validation accuracy: 0.6442
+2019-09-15 20:54:50.058320
+Epoch 12:
+176
+Training loss: 0.8617, Training accuracy: 0.6962
+2019-09-15 20:54:53.884699
+Validation...
+Validation loss: 1.0444, Validation accuracy: 0.6476
+2019-09-15 20:54:54.454429
+Epoch 13:
+176
+Training loss: 0.8232, Training accuracy: 0.7070
+2019-09-15 20:54:58.411456
+Validation...
+Validation loss: 1.0548, Validation accuracy: 0.6424
+2019-09-15 20:54:58.985019
+Epoch 14:
+176
+Training loss: 0.7913, Training accuracy: 0.7208
+2019-09-15 20:55:02.809947
+Validation...
+Validation loss: 1.0270, Validation accuracy: 0.6482
+2019-09-15 20:55:03.370392
+Epoch 15:
+176
+Training loss: 0.7718, Training accuracy: 0.7268
+2019-09-15 20:55:07.202851
+Validation...
+Validation loss: 1.0695, Validation accuracy: 0.6506
+2019-09-15 20:55:07.766664
+Epoch 16:
+176
+Training loss: 0.7222, Training accuracy: 0.7358
+2019-09-15 20:55:11.618764
+Validation...
+Validation loss: 1.1182, Validation accuracy: 0.6332
+2019-09-15 20:55:12.180961
+Epoch 17:
+176
+Training loss: 0.7133, Training accuracy: 0.7434
+2019-09-15 20:55:15.998819
+Validation...
+Validation loss: 1.0866, Validation accuracy: 0.6378
+2019-09-15 20:55:16.550721
+Epoch 18:
+176
+Training loss: 0.6876, Training accuracy: 0.7546
+2019-09-15 20:55:20.361949
+Validation...
+Validation loss: 1.0464, Validation accuracy: 0.6524
+2019-09-15 20:55:20.922343
+Epoch 19:
+176
+Training loss: 0.6665, Training accuracy: 0.7622
+2019-09-15 20:55:24.768191
+Validation...
+Validation loss: 1.0690, Validation accuracy: 0.6452
+2019-09-15 20:55:25.322627
+Epoch 20:
+176
+Training loss: 0.6320, Training accuracy: 0.7670
+2019-09-15 20:55:29.169960
+Validation...
+Validation loss: 1.1895, Validation accuracy: 0.6304
+2019-09-15 20:55:29.727758
+Epoch 21:
+176
+Training loss: 0.6267, Training accuracy: 0.7720
+2019-09-15 20:55:33.562728
+Validation...
+Validation loss: 1.0992, Validation accuracy: 0.6522
+2019-09-15 20:55:34.123175
+Epoch 22:
+176
+Training loss: 0.6064, Training accuracy: 0.7794
+2019-09-15 20:55:37.937930
+Validation...
+Validation loss: 1.0820, Validation accuracy: 0.6486
+2019-09-15 20:55:38.493920
+Epoch 23:
+176
+Training loss: 0.5732, Training accuracy: 0.7929
+2019-09-15 20:55:42.316633
+Validation...
+Validation loss: 1.1519, Validation accuracy: 0.6450
+2019-09-15 20:55:42.868208
+Epoch 24:
+176
+Training loss: 0.5613, Training accuracy: 0.8006
+2019-09-15 20:55:46.637880
+Validation...
+Validation loss: 1.1858, Validation accuracy: 0.6344
+2019-09-15 20:55:47.205037
+Epoch 25:
+176
+Training loss: 0.5361, Training accuracy: 0.8008
+2019-09-15 20:55:51.056029
+Validation...
+Validation loss: 1.1502, Validation accuracy: 0.6454
+2019-09-15 20:55:51.621867
+Epoch 26:
+176
+Training loss: 0.5194, Training accuracy: 0.8098
+2019-09-15 20:55:55.422756
+Validation...
+Validation loss: 1.2130, Validation accuracy: 0.6472
+2019-09-15 20:55:55.978453
+Epoch 27:
+176
+Training loss: 0.5062, Training accuracy: 0.8174
+2019-09-15 20:55:59.801933
+Validation...
+Validation loss: 1.2470, Validation accuracy: 0.6414
+2019-09-15 20:56:00.374391
+Epoch 28:
+176
+Training loss: 0.4926, Training accuracy: 0.8230
+2019-09-15 20:56:04.208700
+Validation...
+Validation loss: 1.2468, Validation accuracy: 0.6338
+2019-09-15 20:56:04.764517
+Epoch 29:
+176
+Training loss: 0.4461, Training accuracy: 0.8336
+2019-09-15 20:56:08.596369
+Validation...
+Validation loss: 1.3067, Validation accuracy: 0.6496
+2019-09-15 20:56:09.156603
+Epoch 30:
+176
+Training loss: 0.4559, Training accuracy: 0.8338
+2019-09-15 20:56:13.030227
+Validation...
+Validation loss: 1.3305, Validation accuracy: 0.6400
+2019-09-15 20:56:13.596628
+Epoch 31:
+176
+Training loss: 0.4196, Training accuracy: 0.8429
+2019-09-15 20:56:17.438334
+Validation...
+Validation loss: 1.3141, Validation accuracy: 0.6394
+2019-09-15 20:56:17.995336
+Epoch 32:
+176
+Training loss: 0.4407, Training accuracy: 0.8398
+2019-09-15 20:56:21.879124
+Validation...
+Validation loss: 1.4276, Validation accuracy: 0.6414
+2019-09-15 20:56:22.438465
+Epoch 33:
+176
+Training loss: 0.3905, Training accuracy: 0.8485
+2019-09-15 20:56:26.231126
+Validation...
+Validation loss: 1.4631, Validation accuracy: 0.6280
+2019-09-15 20:56:26.788991
+Epoch 34:
+176
+Training loss: 0.3955, Training accuracy: 0.8481
+2019-09-15 20:56:30.588651
+Validation...
+Validation loss: 1.4644, Validation accuracy: 0.6286
+2019-09-15 20:56:31.166199
+Epoch 35:
+176
+Training loss: 0.3873, Training accuracy: 0.8542
+2019-09-15 20:56:35.022636
+Validation...
+Validation loss: 1.5204, Validation accuracy: 0.6218
+2019-09-15 20:56:35.591526
+Epoch 36:
+176
+Training loss: 0.3851, Training accuracy: 0.8610
+2019-09-15 20:56:39.406999
+Validation...
+Validation loss: 1.5172, Validation accuracy: 0.6312
+2019-09-15 20:56:39.973928
+Epoch 37:
+176
+Training loss: 0.3206, Training accuracy: 0.8711
+2019-09-15 20:56:43.847412
+Validation...
+Validation loss: 1.5498, Validation accuracy: 0.6334
+2019-09-15 20:56:44.416129
+Epoch 38:
+176
+Training loss: 0.3511, Training accuracy: 0.8653
+2019-09-15 20:56:48.282477
+Validation...
+Validation loss: 1.5550, Validation accuracy: 0.6368
+2019-09-15 20:56:48.848541
+Epoch 39:
+176
+Training loss: 0.3457, Training accuracy: 0.8723
+2019-09-15 20:56:52.693908
+Validation...
+Validation loss: 1.6249, Validation accuracy: 0.6290
+2019-09-15 20:56:53.252550
+Epoch 40:
+176
+Training loss: 0.3294, Training accuracy: 0.8786
+2019-09-15 20:56:57.146012
+Validation...
+Validation loss: 1.6541, Validation accuracy: 0.6150
+2019-09-15 20:56:57.724887
+Epoch 41:
+176
+Training loss: 0.3139, Training accuracy: 0.8794
+2019-09-15 20:57:01.624113
+Validation...
+Validation loss: 1.8286, Validation accuracy: 0.6198
+2019-09-15 20:57:02.186499
+Epoch 42:
+176
+Training loss: 0.2946, Training accuracy: 0.8807
+2019-09-15 20:57:05.983739
+Validation...
+Validation loss: 1.7465, Validation accuracy: 0.6300
+2019-09-15 20:57:06.540416
+Epoch 43:
+176
+Training loss: 0.3155, Training accuracy: 0.8799
+2019-09-15 20:57:10.367030
+Validation...
+Validation loss: 1.7877, Validation accuracy: 0.6276
+2019-09-15 20:57:10.923835
+Epoch 44:
+176
+Training loss: 0.2884, Training accuracy: 0.8940
+2019-09-15 20:57:14.733908
+Validation...
+Validation loss: 1.8282, Validation accuracy: 0.6316
+2019-09-15 20:57:15.295037
+Epoch 45:
+176
+Training loss: 0.2497, Training accuracy: 0.8950
+2019-09-15 20:57:19.157140
+Validation...
+Validation loss: 1.9019, Validation accuracy: 0.6158
+2019-09-15 20:57:19.727355
+Epoch 46:
+176
+Training loss: 0.2731, Training accuracy: 0.8975
+2019-09-15 20:57:23.724413
+Validation...
+Validation loss: 2.0802, Validation accuracy: 0.6148
+2019-09-15 20:57:24.304957
+Epoch 47:
+176
+Training loss: 0.2766, Training accuracy: 0.8957
+2019-09-15 20:57:28.298709
+Validation...
+Validation loss: 2.0027, Validation accuracy: 0.6270
+2019-09-15 20:57:28.902175
+Epoch 48:
+176
+Training loss: 0.3036, Training accuracy: 0.8879
+2019-09-15 20:57:32.808221
+Validation...
+Validation loss: 1.9653, Validation accuracy: 0.6316
+2019-09-15 20:57:33.401873
+Epoch 49:
+176
+Training loss: 0.2696, Training accuracy: 0.9011
+2019-09-15 20:57:37.399421
+Validation...
+Validation loss: 1.9590, Validation accuracy: 0.6276
+2019-09-15 20:57:37.985174
+Epoch 50:
+176
+Training loss: 0.2297, Training accuracy: 0.9040
+2019-09-15 20:57:42.080026
+Validation...
+Validation loss: 2.1343, Validation accuracy: 0.6166
+2019-09-15 20:57:42.665895
+Epoch 51:
+176
+Training loss: 0.2583, Training accuracy: 0.9020
+2019-09-15 20:57:46.637800
+Validation...
+Validation loss: 2.1517, Validation accuracy: 0.6170
+2019-09-15 20:57:47.221658
+Epoch 52:
+176
+Training loss: 0.2201, Training accuracy: 0.9158
+2019-09-15 20:57:51.250392
+Validation...
+Validation loss: 2.2453, Validation accuracy: 0.6090
+2019-09-15 20:57:51.825178
+Epoch 53:
+176
+Training loss: 0.2666, Training accuracy: 0.9043
+2019-09-15 20:57:55.773832
+Validation...
+Validation loss: 2.1871, Validation accuracy: 0.6116
+2019-09-15 20:57:56.357868
+Epoch 54:
+176
+Training loss: 0.2263, Training accuracy: 0.9074
+2019-09-15 20:58:00.462869
+Validation...
+Validation loss: 2.2667, Validation accuracy: 0.6078
+2019-09-15 20:58:01.048741
+Epoch 55:
+176
+Training loss: 0.2507, Training accuracy: 0.9039
+2019-09-15 20:58:05.032649
+Validation...
+Validation loss: 2.1913, Validation accuracy: 0.6284
+2019-09-15 20:58:05.614285
+Epoch 56:
+176
+Training loss: 0.2171, Training accuracy: 0.9176
+2019-09-15 20:58:09.588753
+Validation...
+Validation loss: 2.3326, Validation accuracy: 0.6136
+2019-09-15 20:58:10.163418
+Epoch 57:
+176
+Training loss: 0.2254, Training accuracy: 0.9180
+2019-09-15 20:58:14.128611
+Validation...
+Validation loss: 2.4766, Validation accuracy: 0.6066
+2019-09-15 20:58:14.709180
+Epoch 58:
+176
+Training loss: 0.2200, Training accuracy: 0.9195
+2019-09-15 20:58:18.747363
+Validation...
+Validation loss: 2.4797, Validation accuracy: 0.6146
+2019-09-15 20:58:19.314024
+Epoch 59:
+176
+Training loss: 0.2061, Training accuracy: 0.9150
+2019-09-15 20:58:23.263578
+Validation...
+Validation loss: 2.4631, Validation accuracy: 0.6010
+2019-09-15 20:58:23.849272
+Epoch 60:
+176
+Training loss: 0.2434, Training accuracy: 0.9091
+2019-09-15 20:58:27.807367
+Validation...
+Validation loss: 2.4132, Validation accuracy: 0.6176
+2019-09-15 20:58:28.389275
+Epoch 61:
+176
+Training loss: 0.2111, Training accuracy: 0.9226
+2019-09-15 20:58:32.358237
+Validation...
+Validation loss: 2.5622, Validation accuracy: 0.5988
+2019-09-15 20:58:32.935683
+Epoch 62:
+176
+Training loss: 0.2308, Training accuracy: 0.9108
+2019-09-15 20:58:36.888464
+Validation...
+Validation loss: 2.4535, Validation accuracy: 0.6120
+2019-09-15 20:58:37.466557
+Epoch 63:
+176
+Training loss: 0.1631, Training accuracy: 0.9360
+2019-09-15 20:58:41.511532
+Validation...
+Validation loss: 2.5525, Validation accuracy: 0.6120
+2019-09-15 20:58:42.089860
+Epoch 64:
+176
+Training loss: 0.1862, Training accuracy: 0.9343
+2019-09-15 20:58:46.058770
+Validation...
+Validation loss: 2.7126, Validation accuracy: 0.6142
+2019-09-15 20:58:46.624991
+Epoch 65:
+176
+Training loss: 0.1924, Training accuracy: 0.9298
+2019-09-15 20:58:50.545902
+Validation...
+Validation loss: 2.6982, Validation accuracy: 0.6114
+2019-09-15 20:58:51.121389
+Epoch 66:
+176
+Training loss: 0.1888, Training accuracy: 0.9266
+2019-09-15 20:58:55.077813
+Validation...
+Validation loss: 2.6719, Validation accuracy: 0.6204
+2019-09-15 20:58:55.668012
+Epoch 67:
+176
+Training loss: 0.2240, Training accuracy: 0.9172
+2019-09-15 20:58:59.716379
+Validation...
+Validation loss: 2.7111, Validation accuracy: 0.5986
+2019-09-15 20:59:00.305312
+Epoch 68:
+176
+Training loss: 0.2198, Training accuracy: 0.9175
+2019-09-15 20:59:04.266865
+Validation...
+Validation loss: 2.6289, Validation accuracy: 0.6170
+2019-09-15 20:59:04.850741
+Epoch 69:
+176
+Training loss: 0.1686, Training accuracy: 0.9379
+2019-09-15 20:59:08.836672
+Validation...
+Validation loss: 2.7452, Validation accuracy: 0.6178
+2019-09-15 20:59:09.423900
+Epoch 70:
+176
+Training loss: 0.1805, Training accuracy: 0.9342
+2019-09-15 20:59:13.380962
+Validation...
+Validation loss: 2.7688, Validation accuracy: 0.6162
+2019-09-15 20:59:13.952044
+Epoch 71:
+176
+Training loss: 0.1457, Training accuracy: 0.9430
+2019-09-15 20:59:17.962367
+Validation...
+Validation loss: 2.8771, Validation accuracy: 0.6170
+2019-09-15 20:59:18.537855
+Epoch 72:
+176
+Training loss: 0.1741, Training accuracy: 0.9313
+2019-09-15 20:59:22.500735
+Validation...
+Validation loss: 2.6626, Validation accuracy: 0.6018
+2019-09-15 20:59:23.148416
+Epoch 73:
+176
+Training loss: 0.1754, Training accuracy: 0.9334
+2019-09-15 20:59:27.107206
+Validation...
+Validation loss: 2.8621, Validation accuracy: 0.6058
+2019-09-15 20:59:27.691260
+Epoch 74:
+176
+Training loss: 0.1706, Training accuracy: 0.9399
+2019-09-15 20:59:31.712618
+Validation...
+Validation loss: 3.0693, Validation accuracy: 0.6060
+2019-09-15 20:59:32.298042
+Epoch 75:
+176
+Training loss: 0.1710, Training accuracy: 0.9308
+2019-09-15 20:59:36.280234
+Validation...
+Validation loss: 3.0095, Validation accuracy: 0.6002
+2019-09-15 20:59:36.863500
+Epoch 76:
+176
+Training loss: 0.2170, Training accuracy: 0.9220
+2019-09-15 20:59:40.884280
+Validation...
+Validation loss: 2.9108, Validation accuracy: 0.6080
+2019-09-15 20:59:41.454222
+Epoch 77:
+176
+Training loss: 0.1918, Training accuracy: 0.9334
+2019-09-15 20:59:45.481202
+Validation...
+Validation loss: 2.8015, Validation accuracy: 0.6146
+2019-09-15 20:59:46.056020
+Epoch 78:
+176
+Training loss: 0.1331, Training accuracy: 0.9519
+2019-09-15 20:59:50.067425
+Validation...
+Validation loss: 3.0973, Validation accuracy: 0.6114
+2019-09-15 20:59:50.639558
+Epoch 79:
+176
+Training loss: 0.1386, Training accuracy: 0.9400
+2019-09-15 20:59:54.662733
+Validation...
+Validation loss: 3.0455, Validation accuracy: 0.6074
+2019-09-15 20:59:55.253769
+Epoch 80:
+176
+Training loss: 0.1614, Training accuracy: 0.9383
+2019-09-15 20:59:59.235654
+Validation...
+Validation loss: 3.0827, Validation accuracy: 0.6040
+2019-09-15 20:59:59.812701
+Epoch 81:
+176
+Training loss: 0.1632, Training accuracy: 0.9380
+2019-09-15 21:00:03.869790
+Validation...
+Validation loss: 3.1545, Validation accuracy: 0.6026
+2019-09-15 21:00:04.459952
+Epoch 82:
+176
+Training loss: 0.1964, Training accuracy: 0.9319
+2019-09-15 21:00:08.475542
+Validation...
+Validation loss: 3.0605, Validation accuracy: 0.6108
+2019-09-15 21:00:09.060651
+Epoch 83:
+176
+Training loss: 0.1225, Training accuracy: 0.9554
+2019-09-15 21:00:13.137090
+Validation...
+Validation loss: 3.1747, Validation accuracy: 0.6198
+2019-09-15 21:00:13.732972
+Epoch 84:
+176
+Training loss: 0.1775, Training accuracy: 0.9317
+2019-09-15 21:00:17.728113
+Validation...
+Validation loss: 2.9868, Validation accuracy: 0.6074
+2019-09-15 21:00:18.309513
+Epoch 85:
+176
+Training loss: 0.1316, Training accuracy: 0.9521
+2019-09-15 21:00:22.319733
+Validation...
+Validation loss: 3.2938, Validation accuracy: 0.6102
+2019-09-15 21:00:22.900125
+Epoch 86:
+176
+Training loss: 0.1351, Training accuracy: 0.9513
+2019-09-15 21:00:26.937605
+Validation...
+Validation loss: 3.1584, Validation accuracy: 0.6236
+2019-09-15 21:00:27.521558
+Epoch 87:
+176
+Training loss: 0.1002, Training accuracy: 0.9485
+2019-09-15 21:00:31.544488
+Validation...
+Validation loss: 3.1864, Validation accuracy: 0.6064
+2019-09-15 21:00:32.149719
+Epoch 88:
+176
+Training loss: 0.1700, Training accuracy: 0.9374
+2019-09-15 21:00:36.082694
+Validation...
+Validation loss: 3.2503, Validation accuracy: 0.6048
+2019-09-15 21:00:36.683564
+Epoch 89:
+176
+Training loss: 0.1640, Training accuracy: 0.9386
+2019-09-15 21:00:40.648108
+Validation...
+Validation loss: 3.2347, Validation accuracy: 0.6114
+2019-09-15 21:00:41.229489
+Epoch 90:
+176
+Training loss: 0.1672, Training accuracy: 0.9398
+2019-09-15 21:00:45.189576
+Validation...
+Validation loss: 3.2144, Validation accuracy: 0.6042
+2019-09-15 21:00:45.774336
+Epoch 91:
+176
+Training loss: 0.1404, Training accuracy: 0.9488
+2019-09-15 21:00:49.800542
+Validation...
+Validation loss: 3.2338, Validation accuracy: 0.6114
+2019-09-15 21:00:50.382448
+Epoch 92:
+176
+Training loss: 0.1050, Training accuracy: 0.9561
+2019-09-15 21:00:54.407472
+Validation...
+Validation loss: 3.4231, Validation accuracy: 0.6008
+2019-09-15 21:00:54.982160
+Epoch 93:
+176
+Training loss: 0.1589, Training accuracy: 0.9432
+2019-09-15 21:00:58.981362
+Validation...
+Validation loss: 3.3521, Validation accuracy: 0.6096
+2019-09-15 21:00:59.547991
+Epoch 94:
+176
+Training loss: 0.1484, Training accuracy: 0.9492
+2019-09-15 21:01:03.585623
+Validation...
+Validation loss: 3.3589, Validation accuracy: 0.6012
+2019-09-15 21:01:04.151888
+Epoch 95:
+176
+Training loss: 0.1194, Training accuracy: 0.9608
+2019-09-15 21:01:08.175142
+Validation...
+Validation loss: 3.4436, Validation accuracy: 0.6192
+2019-09-15 21:01:08.752791
+Epoch 96:
+176
+Training loss: 0.1185, Training accuracy: 0.9530
+2019-09-15 21:01:12.737935
+Validation...
+Validation loss: 3.4335, Validation accuracy: 0.6152
+2019-09-15 21:01:13.308477
+Epoch 97:
+176
+Training loss: 0.1124, Training accuracy: 0.9577
+2019-09-15 21:01:17.320731
+Validation...
+Validation loss: 3.6481, Validation accuracy: 0.6122
+2019-09-15 21:01:17.903127
+Epoch 98:
+176
+Training loss: 0.1807, Training accuracy: 0.9386
+2019-09-15 21:01:21.919478
+Validation...
+Validation loss: 3.4713, Validation accuracy: 0.5880
+2019-09-15 21:01:22.502627
+Epoch 99:
+176
+Training loss: 0.2217, Training accuracy: 0.9278
+2019-09-15 21:01:26.489033
+Validation...
+Validation loss: 3.2245, Validation accuracy: 0.6096

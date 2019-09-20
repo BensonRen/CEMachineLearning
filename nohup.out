@@ -1,0 +1,49 @@
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Train on CPU...
+[Errno 2] No such file or directory: './saved_model/model.h5'
+Checkpoint not found.
+Training from scratch ...
+Starting from learning rate 0.010000:
+2019-09-15 20:40:16.774083
+Epoch 0:
+176
+Training loss: 2.3030, Training accuracy: 0.1029
+2019-09-15 20:40:21.196997
+Validation...
+Validation loss: 2.2833, Validation accuracy: 0.1198
+2019-09-15 20:40:21.759197
+Epoch 1:
+176
+Training loss: 2.2076, Training accuracy: 0.2117
+2019-09-15 20:40:25.795696
+Validation...
+Validation loss: 1.9835, Validation accuracy: 0.2924
+2019-09-15 20:40:26.381477
+Epoch 2:
+176
+Training loss: 1.9232, Training accuracy: 0.3078
+2019-09-15 20:40:30.563082
+Validation...
+Validation loss: 1.8649, Validation accuracy: 0.3288
+2019-09-15 20:40:31.136671
+Epoch 3:
+176
+Training loss: 1.7918, Training accuracy: 0.3486
+2019-09-15 20:40:35.282329
+Validation...
+Validation loss: 1.7357, Validation accuracy: 0.3730
+2019-09-15 20:40:35.851368
+Epoch 4:
+176
+Training loss: 1.6963, Training accuracy: 0.3906
+2019-09-15 20:40:40.217059
+Validation...
+Validation loss: 1.6678, Validation accuracy: 0.3926
+2019-09-15 20:40:40.797565
+Epoch 5:
+176

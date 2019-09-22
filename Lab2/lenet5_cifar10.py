@@ -145,7 +145,7 @@ def train_one_epoch(i):
     print("Validation loss: %.4f, Validation accuracy: %.4f" % (val_avg_loss, val_avg_acc))
 
 
-    return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc
+    return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc,global_step
 
 
 
@@ -185,7 +185,7 @@ best_val_acc = 0
 #train_avg_loss_list, train_avg_acc_list, val_avg_loss_list, val_avg_acc_list = [],[],[],[]
 train_loss_acc_val_loss_acc = [[],[],[],[]]
 for i in range(start_epoch, flags.epochs):
-    train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc = train_one_epoch(i)
+    train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i,global_step)
     train_loss_acc_val_loss_acc[0].append(train_avg_loss)
     train_loss_acc_val_loss_acc[1].append(train_avg_acc)
     train_loss_acc_val_loss_acc[2].append(val_avg_loss)

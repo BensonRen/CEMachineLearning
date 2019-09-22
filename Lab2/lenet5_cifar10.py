@@ -191,12 +191,12 @@ for i in range(start_epoch, flags.epochs):
     train_loss_acc_val_loss_acc[2].append(val_avg_loss)
     train_loss_acc_val_loss_acc[3].append(val_avg_acc)
 
-dirname = os.path.join(ckpt_dir, time.strftime('%Y%m%d_%H%M%S', time.localtime()))
+dirname =time.strftime('%Y%m%d_%H%M%S', time.localtime())
 os.mkdir(dirname)
 for i in range(4):
     np.savetxt(os.path.join(dirname,'{}.txt'.format(i)), train_loss_acc_val_loss_acc[i],delimiter=',')
 
-    
+
 """
     Assignment 4(b)
     Learning rate is an important hyperparameter to tune. Specify a 

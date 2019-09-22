@@ -190,12 +190,13 @@ for i in range(start_epoch, flags.epochs):
     train_loss_acc_val_loss_acc[2].append(val_avg_loss)
     train_loss_acc_val_loss_acc[3].append(val_avg_acc)
 
-dirname =time.strftime('%Y%m%d_%H%M%S', time.localtime())
+dirname =os.path.join(flags.result_dir,time.strftime('%Y%m%d_%H%M%S', time.localtime())
 os.mkdir(dirname)
 for i in range(4):
     np.savetxt(os.path.join(dirname,'{}.txt'.format(i)), train_loss_acc_val_loss_acc[i],delimiter=',')
 
-flag_reader.write_flags(flags,  max(train_loss_acc_val_loss_acc[3], dirname))
+val_avg_acc_nparr = np.array(train_loss_acc_val_loss_acc[3])
+flag_reader.write_flags(flags,  max(val_avg_acc_nparr), dirname))
 
 """
     Assignment 4(b)

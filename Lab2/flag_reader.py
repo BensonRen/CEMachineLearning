@@ -5,6 +5,8 @@ from parameters import *
 
 def read_flag():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--device', type=str, default=DEVICE,
+                        help='The device that you would like to work on')
     parser.add_argument('--train-batch-size', type=int, default=TRAIN_BATCH_SIZE,
                         help='batch size of your training data')
     parser.add_argument('--val-batch-size', type=int, default=VAL_BATCH_SIZE,

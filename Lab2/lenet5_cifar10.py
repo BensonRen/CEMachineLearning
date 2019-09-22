@@ -71,7 +71,7 @@ def gettraintest():
     return trainloader,valloader
 
 
-def train_one_epoch(i):
+def train_one_epoch(i,global_step):
     print(datetime.datetime.now())
     # Switch to train mode
     net.train()
@@ -148,7 +148,6 @@ def train_one_epoch(i):
     return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc,global_step
 
 
-
 if __name__ == '__main__':
     flags = flag_reader.read_flag()
 
@@ -196,6 +195,7 @@ os.mkdir(dirname)
 for i in range(4):
     np.savetxt(os.path.join(dirname,'{}.txt'.format(i)), train_loss_acc_val_loss_acc[i],delimiter=',')
 
+flag_reader.write_flags(flags,  max(train_loss_acc_val_loss_acc[3], dirname))
 
 """
     Assignment 4(b)

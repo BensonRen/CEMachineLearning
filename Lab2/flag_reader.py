@@ -1,5 +1,6 @@
 import argparse
 import pandas as pd
+import os
 from parameters import *
 
 def read_flag():
@@ -33,7 +34,7 @@ def read_flag():
 
     return flags
 
-def write_flags(flags, best_validation_loss):
+def write_flags(flags, best_validation_loss, dirname):
     # To avoid terrible looking shape of y_range
     flags_dict = vars(flags)
     flags_dict_copy = flags_dict.copy()  # in order to not corrupt the original data strucutre
@@ -42,4 +43,4 @@ def write_flags(flags, best_validation_loss):
     print(flags_dict_copy)
     flags_df = pd.DataFrame.from_dict(flags_dict_copy, orient='index', columns=['value'])
     flags_df_transpose = flags_df.transpose()
-    flags_df_transpose.to_csv("parameters.txt")
+    flags_df_transpose.to_csv(os.path.join(dirname,"parameters.txt"))

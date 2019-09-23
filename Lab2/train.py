@@ -12,4 +12,4 @@ if __name__ == '__main__':
     for i in range(5):
         flags = flag_reader.read_flag()  	#setting the base case
         flags.lr = lr_list[i]
-        lenet5_cifar10.train_from_flag(flags)
+        lenet5_cifar10.train_from_flags(flags)

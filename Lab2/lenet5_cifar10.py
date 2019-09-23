@@ -17,7 +17,7 @@ import flag_reader
 
 # You cannot change this line.
 from tools.dataloader import CIFAR10
-def recoverfromckpt():
+def recoverfromckpt(flags):
     # Code for loading checkpoint and recover epoch id.
     CKPT_PATH = "./saved_model/model.h5"
 
@@ -46,7 +46,7 @@ def recoverfromckpt():
     return start_epoch,current_learning_rate
 
 
-def gettraintest():
+def gettraintest(flags):
     transform_train = transforms.Compose([transforms.ToTensor(),
                                           transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
                                           transforms.RandomCrop(32, padding=4),
@@ -71,7 +71,7 @@ def gettraintest():
     return trainloader,valloader
 
 
-def train_one_epoch(i,global_step):
+def train_one_epoch(i,global_step,net,trainloader):
     print(datetime.datetime.now())
     # Switch to train mode
     net.train()
@@ -83,7 +83,6 @@ def train_one_epoch(i,global_step):
     train_loss = 0
     train_acc = 0
     # Train the training dataset for 1 epoch.
-    print(len(trainloader))
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         # Copy inputs to device
         inputs = inputs.to(device)
@@ -148,10 +147,8 @@ def train_one_epoch(i,global_step):
     return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc,global_step
 
 def train_from_flags(flags):
-    flags = flag_reader.read_flag()
-
     print("data acquiring and preprocessing...")
-    trainloader, valloader = gettraintest()
+    trainloader, valloader = gettraintest(flags)
     print("Building the model and network")
 
     # Specify the device for computation
@@ -164,7 +161,7 @@ def train_from_flags(flags):
         print("Train on CPU...")
 
     print("Getting the pre-trained model / train from scratch")
-    start_epoch, current_learning_rate = recoverfromckpt()
+    start_epoch, current_learning_rate = recoverfromckpt(flags)
 
     print("Starting from learning rate %f:" % current_learning_rate)
 
@@ -184,7 +181,7 @@ def train_from_flags(flags):
     # train_avg_loss_list, train_avg_acc_list, val_avg_loss_list, val_avg_acc_list = [],[],[],[]
     train_loss_acc_val_loss_acc = [[], [], [], []]
     for i in range(start_epoch, flags.epochs):
-        train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i, global_step)
+        train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i, global_step,net)
         train_loss_acc_val_loss_acc[0].append(train_avg_loss)
         train_loss_acc_val_loss_acc[1].append(train_avg_acc)
         train_loss_acc_val_loss_acc[2].append(val_avg_loss)

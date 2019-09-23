@@ -1,2 +1,0 @@
-,result_dir,device,train_batch_size,val_batch_size,initial_lr,momentum,reg,epochs,decay_epochs,decay_rate,dataroot,checkpoint_path,train_from_scratch,best_validation_loss
-value,results,cuda:1,256,100,0.01,0.9,0.0005,1,1,0.98,./data,./saved_model,False,0.4254

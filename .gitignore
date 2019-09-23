@@ -1,3 +1,6 @@
+*/pidfile*
+*/nohup*
+#/running*
 */*.png
 */*.jpg
 */data/

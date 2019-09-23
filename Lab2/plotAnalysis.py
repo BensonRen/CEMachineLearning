@@ -26,10 +26,21 @@ def plot2lineGeneral(x1_value,y1_value, leg1, x2_value, y2_value, leg2,
     plt.title(title)
     plt.plot(x1_value,y1_value,label = leg1)
     plt.plot(x2_value,y2_value,label = leg2)
+    if (ylab == 'acc'):
+        plt.ylim(0,1)
     plt.xlabel(xlab)
     plt.ylabel(ylab)
     plt.legend()
     f.savefig(savename)
+
+def compare2testacc(dir1, dir2, leg1, leg2):
+    """
+    The function to compare the 2 testing accuracy to show some effect
+    """
+    data1 = pd.read_csv(os.path.join(dir1,'3.txt'),header = None).values
+    data2 = pd.read_csv(os.path.join(dir2,'3.txt'),header = None).values
+    X = range(len(data1))
+    plot2lineGeneral(X, data1, leg1, X, data2, leg2, 'epoch','acc','testing acc comparison', 'test acc comp for ' + dir1[-6:] +'__'+ dir2[-6:])
 
 def plotonerun(directory):
     """

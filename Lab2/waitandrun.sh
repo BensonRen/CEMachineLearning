@@ -9,8 +9,8 @@
 #done
 TIME=`date`
 PWD=`pwd`
-COMMAND=lenet5_cifar10.py
-#COMMAND=train.py
+#COMMAND=lenet5_cifar10.py
+COMMAND=train.py
 SPACE='        '
 SECONDS=0
 nohup python $COMMAND 1>running.log 2>running.err & 

@@ -48,3 +48,52 @@ Process: 24748 is still running
 The program ends very shortly after its launch, probably it failed
 Process: 25239 is still running
 Process: 25382 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 25931 is still running
+Process: 25931 is still running
+Process: 25931 is still running
+Process: 26452 is still running
+Process: 26561 is still running
+Process: 25931 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 25931 is still running
+Process: 25931 is still running
+Process: 25931 is still running
+Process: 27760 is still running
+Process: 27820 is still running
+Process: 25931 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process 25931 has finished
+Process: 28758 is still running
+Process: 28851 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 29680 is still running
+Process: 29759 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 30472 is still running
+Process: 30569 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 31174 is still running
+Process: 31244 is still running
+The program ends very shortly after its launch, probably it failed
+The program ends very shortly after its launch, probably it failed
+Process: 31844 is still running
+Process: 31887 is still running
+Process: 32041 is still running
+Process: 32143 is still running
+./waitandrun.sh: line 24: 31844 Terminated              nohup python $COMMAND > running.log 2> running.err
+The program ends very shortly after its launch, probably it failed
+Process: 31887 is still running
+./waitandrun.sh: line 24: 32041 Terminated              nohup python $COMMAND > running.log 2> running.err
+The program ends very shortly after its launch, probably it failed
+Process: 32143 is still running
+Process: 31887 is still running
+Process: 32143 is still running
+Process 31887 has finished
+Process: 32143 is still running

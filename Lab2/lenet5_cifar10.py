@@ -71,7 +71,8 @@ def gettraintest(flags):
     return trainloader,valloader
 
 
-def train_one_epoch(i,global_step,net,trainloader):
+def train_one_epoch(i,global_step,net,trainloader,valloader,
+                    device,criterion, optimizer):
     print(datetime.datetime.now())
     # Switch to train mode
     net.train()
@@ -153,7 +154,7 @@ def train_from_flags(flags):
 
     # Specify the device for computation
     device = flags.device if torch.cuda.is_available() else 'cpu'
-    net = LeNet5()
+    net = LeNet5(trainloader,valloader, device)
     net = net.to(device)
     if device == 'cuda':
         print("Train on GPU...")
@@ -181,7 +182,7 @@ def train_from_flags(flags):
     # train_avg_loss_list, train_avg_acc_list, val_avg_loss_list, val_avg_acc_list = [],[],[],[]
     train_loss_acc_val_loss_acc = [[], [], [], []]
     for i in range(start_epoch, flags.epochs):
-        train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i, global_step,net)
+        train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i,global_step,net,criterion, optimizer)
         train_loss_acc_val_loss_acc[0].append(train_avg_loss)
         train_loss_acc_val_loss_acc[1].append(train_avg_acc)
         train_loss_acc_val_loss_acc[2].append(val_avg_loss)

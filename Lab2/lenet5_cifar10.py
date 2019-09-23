@@ -70,7 +70,6 @@ def gettraintest(flags):
 
     return trainloader,valloader
 
-
 def train_one_epoch(i,global_step,net,criterion, optimizer):
     print(datetime.datetime.now())
     # Switch to train mode
@@ -149,6 +148,34 @@ def train_one_epoch(i,global_step,net,criterion, optimizer):
 
     return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc,global_step
 
+def lr_decay(i, flags, current_learning_rate, optimizer):
+    """
+    function that makes the decay of the learning rate, every X epoch would times decay rate
+    :param i: epoch number now
+    :param flags: the input flags which contains the decay_epoch information and the decay rate from Hyperparams
+    :param current_learning_rate: The current decay rate
+    :param optimizer: Optimizer to decay
+    :return:
+    """
+    if i % flags.decay_epochs == 0 and i != 0:
+        current_learning_rate =current_learning_rate * flags.decay_rate
+        for param_group in optimizer.param_groups:
+        # Assign the learning rate parameter
+            param_group['lr'] = current_learning_rate
+        print("Current learning rate has decayed to %f" % current_learning_rate)
+    return current_learning_rate
+
+def saveifbest(val_avg_acc, best_val_acc,flags, i, current_learning_rate, net):
+    if val_avg_acc > best_val_acc:
+        best_val_acc = val_avg_acc
+        if not os.path.exists(flags.checkpoint_path):
+            os.makedirs(flags.checkpoint_path)
+        print("Saving ...")
+        state = {'net': net.state_dict(),
+                 'epoch': i,
+                 'lr': current_learning_rate}
+        torch.save(state, os.path.join(flags.checkpoint_path, 'model.h5'))
+
 def train_from_flags(flags):
     print("data acquiring and preprocessing...")
     trainloader, valloader = gettraintest(flags)
@@ -185,6 +212,8 @@ def train_from_flags(flags):
     train_loss_acc_val_loss_acc = [[], [], [], []]
     for i in range(start_epoch, flags.epochs):
         train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i,global_step,net,criterion, optimizer)
+        current_learning_rate = lr_decay(i,flags,current_learning_rate,optimizer)       #Do the update the
+        saveifbest(val_avg_acc, best_val_acc, flags, i, current_learning_rate, net)     #Save the model if it is best
         train_loss_acc_val_loss_acc[0].append(train_avg_loss)
         train_loss_acc_val_loss_acc[1].append(train_avg_acc)
         train_loss_acc_val_loss_acc[2].append(val_avg_loss)
@@ -195,7 +224,6 @@ def train_from_flags(flags):
         os.makedirs(dirname)
     for i in range(4):
         np.savetxt(os.path.join(dirname, '{}.txt'.format(i)), train_loss_acc_val_loss_acc[i], delimiter=',')
-
     val_avg_acc_nparr = np.array(train_loss_acc_val_loss_acc[3])
     flag_reader.write_flags(flags, max(val_avg_acc_nparr), dirname)
 

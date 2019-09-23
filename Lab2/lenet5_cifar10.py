@@ -226,47 +226,8 @@ def train_from_flags(flags):
         np.savetxt(os.path.join(dirname, '{}.txt'.format(i)), train_loss_acc_val_loss_acc[i], delimiter=',')
     val_avg_acc_nparr = np.array(train_loss_acc_val_loss_acc[3])
     flag_reader.write_flags(flags, max(val_avg_acc_nparr), dirname)
-
+    print("optimization finished")
 
 if __name__ == '__main__':
     flags = flag_reader.read_flag()
     train_from_flags(flags)
-"""
-    Assignment 4(b)
-    Learning rate is an important hyperparameter to tune. Specify a 
-    learning rate decay policy and apply it in your training process. 
-    Briefly describe its impact on the learning curveduring your 
-    training process.    
-    Reference learning rate schedule: 
-    decay 0.98 for every 2 epochs. You may tune this parameter but 
-    minimal gain will be achieved.
-    Assignment 4(c)
-    As we can see from above, hyperparameter optimization is critical 
-    to obtain a good performance of DNN models. Try to fine-tune the 
-    model to over 70% accuracy. You may also increase the number of 
-    epochs to up to 100 during the process. Briefly describe what you 
-    have tried to improve the performance of the LeNet-5 model.
-    DECAY_EPOCHS = 2
-    DECAY = 1.00
-    if i % DECAY_EPOCHS == 0 and i != 0:
-        current_learning_rate = 
-        for param_group in optimizer.param_groups:
-            # Assign the learning rate parameter
-            
-        print("Current learning rate has decayed to %f" %current_learning_rate)
-    
-    # Save for checkpoint
-    if avg_acc > best_val_acc:
-        best_val_acc = avg_acc
-        if not os.path.exists(CHECKPOINT_PATH):
-            os.makedirs(CHECKPOINT_PATH)
-        print("Saving ...")
-        state = {'net': net.state_dict(),
-                 'epoch': i,
-                 'lr': current_learning_rate}
-        torch.save(state, os.path.join(CHECKPOINT_PATH, 'model.h5'))
-
-print("Optimization finished.")
-"""
-
-

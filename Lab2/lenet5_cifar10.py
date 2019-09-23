@@ -17,7 +17,7 @@ import flag_reader
 
 # You cannot change this line.
 from tools.dataloader import CIFAR10
-def recoverfromckpt(flags):
+def recoverfromckpt(flags,net):
     # Code for loading checkpoint and recover epoch id.
     CKPT_PATH = "./saved_model/model.h5"
 
@@ -191,7 +191,7 @@ def train_from_flags(flags):
         print("Train on CPU...")
 
     print("Getting the pre-trained model / train from scratch")
-    start_epoch, current_learning_rate = recoverfromckpt(flags)
+    start_epoch, current_learning_rate = recoverfromckpt(flags,net)
 
     print("Starting from learning rate %f:" % current_learning_rate)
 

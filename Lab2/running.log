@@ -8,13 +8,247 @@ Files already downloaded and verified
 Building the model and network
 Train on CPU...
 Getting the pre-trained model / train from scratch
-[Errno 2] No such file or directory: './saved_model/model.h5'
-Checkpoint not found.
 Training from scratch ...
-Starting from learning rate 0.100000:
+Starting from learning rate 0.050000:
 Setting up the loss function...
-2019-09-22 20:54:51.393257
+2019-09-23 12:32:49.753194
 Epoch 0:
-Training loss: 2.1828, Training accuracy: 0.1632
-2019-09-22 20:55:04.976191
+Training loss: 1.7764, Training accuracy: 0.3945
+2019-09-23 12:32:53.960923
 Validation...
+Validation loss: 1.4109, Validation accuracy: 0.4842
+Saving ...
+2019-09-23 12:32:54.551772
+Epoch 1:
+Training loss: 1.3023, Training accuracy: 0.5368
+2019-09-23 12:32:58.594812
+Validation...
+Validation loss: 1.3527, Validation accuracy: 0.5176
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:32:59.197883
+Epoch 2:
+Training loss: 1.1489, Training accuracy: 0.5894
+2019-09-23 12:33:03.223328
+Validation...
+Validation loss: 1.1937, Validation accuracy: 0.5718
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:03.810174
+Epoch 3:
+Training loss: 1.0632, Training accuracy: 0.6242
+2019-09-23 12:33:07.840976
+Validation...
+Validation loss: 1.0598, Validation accuracy: 0.6244
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:08.413718
+Epoch 4:
+Training loss: 1.0053, Training accuracy: 0.6475
+2019-09-23 12:33:12.432405
+Validation...
+Validation loss: 1.1104, Validation accuracy: 0.6174
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:13.007144
+Epoch 5:
+Training loss: 0.9620, Training accuracy: 0.6604
+2019-09-23 12:33:17.042340
+Validation...
+Validation loss: 1.0726, Validation accuracy: 0.6312
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:17.608234
+Epoch 6:
+Training loss: 0.9132, Training accuracy: 0.6802
+2019-09-23 12:33:21.632605
+Validation...
+Validation loss: 1.1002, Validation accuracy: 0.6226
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:22.195015
+Epoch 7:
+Training loss: 0.8636, Training accuracy: 0.6958
+2019-09-23 12:33:26.247384
+Validation...
+Validation loss: 1.0340, Validation accuracy: 0.6348
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:26.810182
+Epoch 8:
+Training loss: 0.8220, Training accuracy: 0.7051
+2019-09-23 12:33:30.800679
+Validation...
+Validation loss: 0.9862, Validation accuracy: 0.6546
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:31.349643
+Epoch 9:
+Training loss: 0.7895, Training accuracy: 0.7216
+2019-09-23 12:33:35.449245
+Validation...
+Validation loss: 1.0320, Validation accuracy: 0.6436
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:36.029201
+Epoch 10:
+Training loss: 0.7668, Training accuracy: 0.7281
+2019-09-23 12:33:40.327712
+Validation...
+Validation loss: 1.0123, Validation accuracy: 0.6500
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:40.903687
+Epoch 11:
+Training loss: 0.7503, Training accuracy: 0.7350
+2019-09-23 12:33:45.147101
+Validation...
+Validation loss: 1.0197, Validation accuracy: 0.6524
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:45.736030
+Epoch 12:
+Training loss: 0.6906, Training accuracy: 0.7465
+2019-09-23 12:33:49.801473
+Validation...
+Validation loss: 0.9961, Validation accuracy: 0.6588
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:50.381730
+Epoch 13:
+Training loss: 0.6900, Training accuracy: 0.7508
+2019-09-23 12:33:54.459328
+Validation...
+Validation loss: 1.0111, Validation accuracy: 0.6594
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:55.048298
+Epoch 14:
+Training loss: 0.6744, Training accuracy: 0.7590
+2019-09-23 12:33:59.083947
+Validation...
+Validation loss: 1.0837, Validation accuracy: 0.6478
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:59.663421
+Epoch 15:
+Training loss: 0.6678, Training accuracy: 0.7599
+2019-09-23 12:34:03.703027
+Validation...
+Validation loss: 1.0357, Validation accuracy: 0.6496
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:04.289145
+Epoch 16:
+Training loss: 0.6218, Training accuracy: 0.7704
+2019-09-23 12:34:08.335820
+Validation...
+Validation loss: 1.0804, Validation accuracy: 0.6516
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:08.915160
+Epoch 17:
+Training loss: 0.5985, Training accuracy: 0.7797
+2019-09-23 12:34:12.955862
+Validation...
+Validation loss: 1.0640, Validation accuracy: 0.6534
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:13.545823
+Epoch 18:
+Training loss: 0.6060, Training accuracy: 0.7816
+2019-09-23 12:34:17.603467
+Validation...
+Validation loss: 1.0691, Validation accuracy: 0.6534
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:18.179247
+Epoch 19:
+Training loss: 0.5963, Training accuracy: 0.7835
+2019-09-23 12:34:22.277519
+Validation...
+Validation loss: 1.1117, Validation accuracy: 0.6436
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:22.865530
+Epoch 20:
+Training loss: 0.5681, Training accuracy: 0.7906
+2019-09-23 12:34:26.883664
+Validation...
+Validation loss: 1.0847, Validation accuracy: 0.6516
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:27.458120
+Epoch 21:
+Training loss: 0.5490, Training accuracy: 0.7953
+2019-09-23 12:34:31.375967
+Validation...
+Validation loss: 1.0893, Validation accuracy: 0.6528
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:31.916100
+Epoch 22:
+Training loss: 0.6549, Training accuracy: 0.7583
+2019-09-23 12:33:52.750996
+Validation...
+Validation loss: 1.3235, Validation accuracy: 0.6024
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:53.317565
+Epoch 23:
+Training loss: 0.6708, Training accuracy: 0.7607
+2019-09-23 12:33:57.319688
+Validation...
+Validation loss: 1.4176, Validation accuracy: 0.5962
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:33:57.872054
+Epoch 24:
+Training loss: 0.6743, Training accuracy: 0.7621
+2019-09-23 12:34:01.813340
+Validation...
+Validation loss: 1.4524, Validation accuracy: 0.5824
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:02.364210
+Epoch 25:
+Training loss: 0.6471, Training accuracy: 0.7585
+2019-09-23 12:34:06.358142
+Validation...
+Validation loss: 1.3654, Validation accuracy: 0.5872
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:06.907376
+Epoch 26:
+Training loss: 0.6404, Training accuracy: 0.7677
+2019-09-23 12:34:10.941477
+Validation...
+Validation loss: 1.3853, Validation accuracy: 0.5998
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:11.492894
+Epoch 27:
+Training loss: 0.6597, Training accuracy: 0.7651
+2019-09-23 12:34:15.439111
+Validation...
+Validation loss: 1.4268, Validation accuracy: 0.6030
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:15.986605
+Epoch 28:
+Training loss: 0.6439, Training accuracy: 0.7720
+2019-09-23 12:34:19.923593
+Validation...
+Validation loss: 1.4790, Validation accuracy: 0.5716
+Current learning rate has decayed to 0.050000
+Saving ...
+2019-09-23 12:34:20.469821
+Epoch 29:
+Training loss: 0.6483, Training accuracy: 0.7626
+2019-09-23 12:34:24.418703
+Validation...
+Validation loss: 1.3345, Validation accuracy: 0.6066
+Current learning rate has decayed to 0.050000
+Saving ...
+{'result_dir': 'results', 'device': 'cuda:2', 'train_batch_size': 256, 'val_batch_size': 100, 'initial_lr': 0.05, 'momentum': 0.9, 'reg': 0.0005, 'epochs': 30, 'decay_epochs': 1, 'decay_rate': 1, 'dataroot': './data', 'checkpoint_path': './saved_model', 'train_from_scratch': True, 'best_validation_loss': 0.6142}
+optimization finished

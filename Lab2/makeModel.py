@@ -25,9 +25,11 @@ class LeNet5(nn.Module):
         self.device = device
 
     def forward(self, x):
-        out = F.relu(self.bn1(self.conv1(x)))
+        #out = F.relu(self.conv1(x))                     #This is without Batch Norm
+        out = F.relu(self.bn1(self.conv1(x)))          #This is the one with Batch Norm
         out = F.max_pool2d(out, 2)
-        out = F.relu(self.bn2(self.conv2(out)))
+        #out = F.relu(self.conv2(out))                   #THis is without Batch Norm
+        out = F.relu(self.bn2(self.conv2(out)))        #This is the one with Batch Norm
         out = F.max_pool2d(out, 2)
         out = out.view(out.size(0), -1)
         out = F.relu(self.fc1(out))

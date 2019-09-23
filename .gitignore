@@ -1,3 +1,5 @@
+*/*.png
+*/*.jpg
 */data/
 */saved_model/
 */result

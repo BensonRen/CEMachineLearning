@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import seaborn as sns;sns.set()
+
 #Plot the comparison between 2 plots with the name within
 #plotting the training and validation curves
 def plot2lineGeneral(x1_value,y1_value, leg1, x2_value, y2_value, leg2,
@@ -37,12 +39,12 @@ def plotonerun(directory):
     """
     data = []
     for i in range(4):
-        data.append(pd.read_csv(os.path.join(directory,i,'.txt'),header=None).values)
+        data.append(pd.read_csv(os.path.join(directory,str(i)+'.txt'),header=None).values)
     commonX = range(len(data[0]))
     plot2lineGeneral(commonX,data[0],'training',commonX,data[2],'testing',
-                     'epoch','loss','loss vs epoch','loss graph for data ' + directory)
+                     'epoch','loss','loss vs epoch','loss graph for data ' + directory[-15:])
     plot2lineGeneral(commonX, data[1], 'training', commonX, data[3], 'testing',
-                     'epoch', 'acc', 'acc vs epoch', 'acc graph for data ' + directory)
+                     'epoch', 'acc', 'acc vs epoch', 'acc graph for data ' + directory[-15:])
 
 
 def plotNcompare(directory1, directory2, plot_index, leg1pref, leg2pref, result_dir = 'results'):

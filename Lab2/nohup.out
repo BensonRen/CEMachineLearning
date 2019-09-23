@@ -12,3 +12,39 @@ The program ends very shortly after its launch, probably it failed
 Process: 21894 is still running
 Process: 21894 is still running
 Process: 22328 is still running
+./waitandrun.sh: line 23: 21894 Terminated              nohup python $COMMAND > running.log 2> running.err
+Process 21894 has finished
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 22328 is still running
+Process: 24381 is still running
+The program ends very shortly after its launch, probably it failed
+Process: 24748 is still running
+The program ends very shortly after its launch, probably it failed
+Process: 25239 is still running
+Process: 25382 is still running

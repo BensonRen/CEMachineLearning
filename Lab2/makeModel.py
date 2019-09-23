@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class LeNet5(nn.Module):
-    def __init__(self,trainloader, testloader,device,optimizer):
+    def __init__(self,trainloader, valloader,device):
         super(LeNet5, self).__init__()
         self.conv1 = nn.Conv2d(3, 6, 5)
         self.bn1 = nn.BatchNorm2d(6)
@@ -21,7 +21,7 @@ class LeNet5(nn.Module):
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
         self.trainloader = trainloader
-        self.testloader = testloader
+        self.valloader = valloader
         self.device = device
 
     def forward(self, x):

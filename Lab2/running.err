@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "train.py", line 15, in <module>
-    lenet5_cifar10.train_from_flag(flags)
-AttributeError: module 'lenet5_cifar10' has no attribute 'train_from_flag'

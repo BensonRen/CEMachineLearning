@@ -1,0 +1,20 @@
+data acquiring and preprocessing...
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Using downloaded and verified file: ./data/cifar10_trainval.tar.gz
+Extracting ./data/cifar10_trainval.tar.gz to ./data
+Files already downloaded and verified
+Building the model and network
+Train on CPU...
+Getting the pre-trained model / train from scratch
+[Errno 2] No such file or directory: './saved_model/model.h5'
+Checkpoint not found.
+Training from scratch ...
+Starting from learning rate 0.100000:
+Setting up the loss function...
+2019-09-22 20:54:51.393257
+Epoch 0:
+Training loss: 2.1828, Training accuracy: 0.1632
+2019-09-22 20:55:04.976191
+Validation...

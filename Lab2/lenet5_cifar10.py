@@ -71,8 +71,7 @@ def gettraintest(flags):
     return trainloader,valloader
 
 
-def train_one_epoch(i,global_step,net,trainloader,valloader,
-                    device,criterion, optimizer):
+def train_one_epoch(i,global_step,net,criterion, optimizer):
     print(datetime.datetime.now())
     # Switch to train mode
     net.train()
@@ -83,6 +82,9 @@ def train_one_epoch(i,global_step,net,trainloader,valloader,
 
     train_loss = 0
     train_acc = 0
+    device = net.device
+    trainloader = net.trainloader
+    valloader = net.valloader
     # Train the training dataset for 1 epoch.
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         # Copy inputs to device

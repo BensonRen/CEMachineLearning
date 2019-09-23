@@ -147,58 +147,62 @@ def train_one_epoch(i,global_step):
 
     return train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc,global_step
 
-
-if __name__ == '__main__':
+def train_from_flags(flags):
     flags = flag_reader.read_flag()
 
     print("data acquiring and preprocessing...")
-    trainloader,valloader = gettraintest()
+    trainloader, valloader = gettraintest()
     print("Building the model and network")
 
     # Specify the device for computation
     device = flags.device if torch.cuda.is_available() else 'cpu'
     net = LeNet5()
     net = net.to(device)
-    if device =='cuda':
+    if device == 'cuda':
         print("Train on GPU...")
     else:
         print("Train on CPU...")
 
     print("Getting the pre-trained model / train from scratch")
-    start_epoch,current_learning_rate = recoverfromckpt()
+    start_epoch, current_learning_rate = recoverfromckpt()
 
-    print("Starting from learning rate %f:" %current_learning_rate)
+    print("Starting from learning rate %f:" % current_learning_rate)
 
     print('Setting up the loss function...')
     # Create loss function and specify regularization
-    criterion = nn.CrossEntropyLoss() #L2 norminat weight_decay for optimizer
+    criterion = nn.CrossEntropyLoss()  # L2 norminat weight_decay for optimizer
     # Add optimizer
-    optimizer = torch.optim.SGD(net.parameters(), lr= flags.initial_lr, momentum = flags.momentum, weight_decay=flags.reg)
+    optimizer = torch.optim.SGD(net.parameters(), lr=flags.initial_lr, momentum=flags.momentum, weight_decay=flags.reg)
 
-# Start the training/validation process
-# The process should take about 5 minutes on a GTX 1070-Ti
-# if the code is written efficiently.
-global_step = 0
-best_val_acc = 0
-#Initialize the lists for training and validations
-#train_avg_loss_list, train_avg_acc_list, val_avg_loss_list, val_avg_acc_list = [],[],[],[]
-train_loss_acc_val_loss_acc = [[],[],[],[]]
-for i in range(start_epoch, flags.epochs):
-    train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i,global_step)
-    train_loss_acc_val_loss_acc[0].append(train_avg_loss)
-    train_loss_acc_val_loss_acc[1].append(train_avg_acc)
-    train_loss_acc_val_loss_acc[2].append(val_avg_loss)
-    train_loss_acc_val_loss_acc[3].append(val_avg_acc)
 
-dirname =os.path.join(flags.result_dir,time.strftime('%Y%m%d_%H%M%S', time.localtime()))
-if not os.path.exists(dirname):
-    os.makedirs(dirname)
-for i in range(4):
-    np.savetxt(os.path.join(dirname,'{}.txt'.format(i)), train_loss_acc_val_loss_acc[i],delimiter=',')
+    # Start the training/validation process
+    # The process should take about 5 minutes on a GTX 1070-Ti
+    # if the code is written efficiently.
+    global_step = 0
+    best_val_acc = 0
+    # Initialize the lists for training and validations
+    # train_avg_loss_list, train_avg_acc_list, val_avg_loss_list, val_avg_acc_list = [],[],[],[]
+    train_loss_acc_val_loss_acc = [[], [], [], []]
+    for i in range(start_epoch, flags.epochs):
+        train_avg_loss, train_avg_acc, val_avg_loss, val_avg_acc, global_step = train_one_epoch(i, global_step)
+        train_loss_acc_val_loss_acc[0].append(train_avg_loss)
+        train_loss_acc_val_loss_acc[1].append(train_avg_acc)
+        train_loss_acc_val_loss_acc[2].append(val_avg_loss)
+        train_loss_acc_val_loss_acc[3].append(val_avg_acc)
 
-val_avg_acc_nparr = np.array(train_loss_acc_val_loss_acc[3])
-flag_reader.write_flags(flags,  max(val_avg_acc_nparr), dirname)
+    dirname = os.path.join(flags.result_dir, time.strftime('%Y%m%d_%H%M%S', time.localtime()))
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+    for i in range(4):
+        np.savetxt(os.path.join(dirname, '{}.txt'.format(i)), train_loss_acc_val_loss_acc[i], delimiter=',')
 
+    val_avg_acc_nparr = np.array(train_loss_acc_val_loss_acc[3])
+    flag_reader.write_flags(flags, max(val_avg_acc_nparr), dirname)
+
+
+if __name__ == '__main__':
+    flags = flag_reader.read_flag()
+    train_from_flags(flags)
 """
     Assignment 4(b)
     Learning rate is an important hyperparameter to tune. Specify a 
